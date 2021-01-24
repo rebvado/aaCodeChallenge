@@ -25,6 +25,6 @@ const initDB = async () => {
     logging: false
   }).then(connection => {
     repository = connection.getRepository(PreviousSearch)
-  }).catch(error => console.log(error));
+  }).catch(error => console.error(error));
 }
 initDB()

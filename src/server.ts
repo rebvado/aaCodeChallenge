@@ -5,7 +5,7 @@ import './db/database'
 const app = express()
 
 function loggerMiddleware(request: express.Request, response: express.Response, next: any) {
-  response;
+  response; // not used
   console.log(`${request.method} ${request.path}`);
   next();
 }

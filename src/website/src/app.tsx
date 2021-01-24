@@ -7,8 +7,6 @@ import { WeatherSearch } from './weatherSearch';
 import { SearchHistory } from './searchHistory';
 import { WeatherDisplay } from './weatherDisplay';
 
-console.log('website starting....')
-
 const useStyles = makeStyles(() => ({
   grow: {
     flexGrow: 1

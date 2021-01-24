@@ -9,7 +9,7 @@ import { getWeatherGivenCity } from './weatherSearch';
 const autoRefreshHistory = async () => {
 
   let response = await axios.get<{ city: string, timestamp: string }[]>(`http://${host}/history`)
-  console.log('got history: ', response.data)
+  
   runInAction(() => {
     appState.searchHistory = response.data
   })

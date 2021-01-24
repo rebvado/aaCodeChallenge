@@ -65,7 +65,6 @@ type WeatherResponse = {
 }
 
 router.get('/city/:cityName', (request, response) => {
-  console.log('Get weather for city: ', request.params['cityName'])
   axios.get<WeatherResponse>(`https://api.openweathermap.org/data/2.5/weather?q=${request.params['cityName']}&appid=${WeatherAPIKey}&units=metric`).then((weatherResponse) => {
 
     // Send response quickly

@@ -3,7 +3,7 @@ import { makeAutoObservable } from 'mobx';
 import { cityNames } from './cities'
 import { FieldState } from 'formstate';
 
-export const host = 'localhost:5000'
+export const host = '3.25.66.31:5000'
 
 export type WeatherResponse = {
   coord: { lon: number, lat: number },
